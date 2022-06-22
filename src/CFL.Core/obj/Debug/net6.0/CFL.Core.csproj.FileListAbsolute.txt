@@ -1,0 +1,12 @@
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/bin/Debug/net6.0/CFL.Core.deps.json
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/bin/Debug/net6.0/CFL.Core.dll
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/bin/Debug/net6.0/CFL.Core.pdb
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/CFL.Core.csproj.AssemblyReference.cache
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/CFL.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/CFL.Core.AssemblyInfoInputs.cache
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/CFL.Core.AssemblyInfo.cs
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/CFL.Core.csproj.CoreCompileInputs.cache
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/CFL.Core.dll
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/refint/CFL.Core.dll
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/CFL.Core.pdb
+/Users/erdem/code/tutorials/crossfirelab/src/CFL.Core/obj/Debug/net6.0/ref/CFL.Core.dll
