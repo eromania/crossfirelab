@@ -1,5 +1,7 @@
+using System.Data.SqlTypes;
 using CFL.Domain;
 using CFL.Infrastructure.Base;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CFL.Infrastructure;
@@ -20,6 +22,7 @@ public class ExchangeRateConfiguration : EntityConfiguration<ExchangeRate>
             .IsRequired();
 
         builder.Property(t => t.Rate)
+            .HasColumnType("money")
             .IsRequired();
         
         builder.Property(t => t.Time)

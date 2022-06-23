@@ -6,7 +6,7 @@ namespace CFL.Domain.Base;
 public abstract class Entity
 {
     public int ObjectId { get; set; }
-    public DateTime Created { get; set; }
-    public int CreatedBy { get; set; }
-    public int IsValid { get; set; }
+    public DateTime Created { get; set; } = DateTime.Now;
+    public int CreatedBy { get; set; } = 111;
+    public int IsValid { get; set; } = 1;
 }
