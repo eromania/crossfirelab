@@ -35,12 +35,18 @@ public class UserService : IUserService
 
     public User GetUser(int id)
     {
-        throw new NotImplementedException();
+        return new User()
+        {
+            Id = 1,
+            FirstName = "cfl",
+            LastName = "surname",
+            Password = "123",
+            Username = "cfl"
+        };
     }
     
     private string generateJwtToken(User user)
     {
-        // generate token that is valid for 7 days
         var tokenHandler = new JwtSecurityTokenHandler();
         var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
         var tokenDescriptor = new SecurityTokenDescriptor

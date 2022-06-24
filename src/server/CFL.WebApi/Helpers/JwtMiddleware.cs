@@ -18,7 +18,8 @@ public class JwtMiddleware
 
     public async Task Invoke(HttpContext context, IUserService userService)
     {
-        var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+        var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last().Replace('"', ' ')
+            .Trim();
 
         if (token != null)
             attachUserToContext(context, userService, token);
@@ -41,14 +42,16 @@ public class JwtMiddleware
                 ClockSkew = TimeSpan.Zero
             }, out var validatedToken);
 
+            // var handler = new JwtSecurityTokenHandler();
+            // var tokenData = handler.ReadJwtToken(token);
             var jwtToken = (JwtSecurityToken)validatedToken;
             var userId = int.Parse(jwtToken.Claims.First(x => x.Type == "id").Value);
 
             context.Items["User"] = userService.GetUser(userId);
         }
-        catch
+        catch (Exception ex)
         {
-            // ignored
+            var s = ex.Message;
         }
     }
 }
